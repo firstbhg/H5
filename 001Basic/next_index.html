@@ -25,11 +25,38 @@
             color:gray;
         }
         p.thick{front-weight:bold;}
+        *{
+            margin:0;
+            padding:0;
+        }
+        #box{
+             position: relative;
+             top:100px;
+             left:100px;
+             width: 140px;
+             height: 100px;
+             background: #088cb7;
+             -moz-border-radius: 12px;
+             -webkit-border-radius: 12px;
+             border-radius: 12px;
+         }
+         #box:before{
+             position: absolute;
+             content: "";
+             width: 0;
+             height: 0;
+             right: 100%;
+             top: 38px;
+             border-top: 13px solid transparent;
+             border-right: 26px solid #088cb7;
+             border-bottom: 13px solid transparent;
+        }
     </style>
 </head>
 <body>
 <h1>SURFACE PART</h1>
 <br/><br/><br/><br/><br/><br/><br/>
 <p id="op">Sign In</P>
+    <div id="box"></div>
 </body>
 </html>
