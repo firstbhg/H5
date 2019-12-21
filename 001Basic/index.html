@@ -1,52 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
     <title>BHG</title>
-    <style type="text/css">
-        body{
-            background-image:url(./image/zzpic9603.jpg);
-            background-size: 100% 100%;
-        }
-        html{
-            height:100%;
-            
-        }
-        h1{
-            animation:myfirst 5s infinate;
-            font-family: Times;
-            font-size:4em;
-            text-align:center
-            
-        }
-        h1.thick {font-weight:bold;}
-        p{
-            font-family: Times;
-            font-size:2.5em;
-            text-align:center
-        }
-        a:link {color:#000000;text-decoration:none;}    /* 未被访问的链接 */
-        a:visited {color:#000000;text-decoration:none;} /* 已被访问的链接 */
-        a:hover {color:#FFFFFF;}   /* 鼠标指针移动到链接上 */
-        a:active {color:#FFFFFF;}  /* 正在被点击的链接 */
-    </style>
 </head>
-<body>
-<audio src="./music/background.wav" autoplay="autoplay" loop="loop"></audio>
-<br /><br /><br />
-<h1>WELCOME TO MY PAGE</h1>
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
-<p><a href="/H5/001Basic/next_index.html" target="_self">ENTER</a></p>
-<div align="right"><table border="1">
-<tr>
-  <th>NAME</th><td>Mr.Bi</td>
-</tr>
-<tr>
-  <th>EMAIL</th><td>myfirstnameco@gmail.com</td>
-</tr>
-<tr>
-  <th>QQ</th><td>2251606839</td>
-</tr>
-</table></div>
+
+<body bgcolor="grey">
+<div id="page_end_html">
+    <canvas id="catw" width="500" height="500" style="position: fixed; bottom: 0;right:50%;"></canvas>
+    <script src="https://cdn.zhangxinxu.com/sp/demo/live2d/live2d/js/live2d.js"></script>
+    <script type="text/javascript">
+        loadlive2d("catw", "https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-tororo/assets/tororo.model.json");
+    </script>
+</div>
 </body>
 </html>
