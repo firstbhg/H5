@@ -6,7 +6,7 @@
     text-align:center;
 }
 .windows{
-    margin:10% auto auto auto;
+    margin:1% auto auto auto;
     width:560px;
     background-color: #fff;
     position: relative;
@@ -90,4 +90,34 @@ a{
     .progress-con{
         width: 55%;
     }
+}
+
+#lolicon{
+    width: 900px;
+    overflow: hidden;
+}
+
+.list{
+    color:#333;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    animation: leftmove 30s infinite linear;
+}
+.list i {
+    float:left;
+    height: 150px;
+    width: 150px;
+    vertical-align:middle;
+    text-align:center;
+}
+@-webkit-keyframes leftmove {
+    from{
+        left:0px;
+    }to{
+        left:-9900px;
+         }
 }

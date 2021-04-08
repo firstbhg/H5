@@ -29,7 +29,7 @@ window.onload=function () {
                 var Hi = JSON.parse(gethi.responseText);
                 hitokoto.innerHTML = Hi.hitokoto;
                 from.innerHTML = "- "+ Hi.from;
-                console.log(Hi.hitokoto);
+                //console.log(Hi.hitokoto);
             }
         }
     }
@@ -43,12 +43,12 @@ window.onload=function () {
         return Math.floor(Math.random()*(81)+60)
     }
     function time_update(){
-        console.log(queue);
+        //console.log(queue);
         queue[queue.length] = setInterval(function(){
             time_progress.style.left=time_progress.style.left=="0%"?"100%":"0%";
             update();
             setcolor();
-            console.log((new Date().getTime()-times)/1000);
+            //console.log((new Date().getTime()-times)/1000);
             times = new Date().getTime();
         },30000);
     }
@@ -57,7 +57,7 @@ window.onload=function () {
             clearInterval(queue[i]);
         }
         queue=[];
-        console.log(queue);
+        //console.log(queue);
         update();
         time_update();
     })
