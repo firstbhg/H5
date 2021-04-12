@@ -70,6 +70,11 @@
 .fc-lol-zhumei:before {
   content: "\e148";
 }
+.fc-lol-zhumei:after {
+  content: "猪妹";
+  font-family: "华文彩云";
+  font-size: 30px;
+}
 /** 提莫 **/
 .fc-lol-timo:before {
   content: "\e149";

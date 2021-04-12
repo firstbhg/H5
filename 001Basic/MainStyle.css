@@ -106,7 +106,7 @@ a{
     top: 0px;
     left: 0px;
     width: 100%;
-    animation: leftmove 60s infinite linear;
+    animation: leftmove 120s infinite linear;
 }
 .list i {
     float:left;
