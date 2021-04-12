@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Microsoft YaHei",Arial,sans-serif,STHeiti;
+    text-align:center;
+}
+.windows{
+    margin:1% auto auto auto;
+    width:560px;
+    background-color: #fff;
+    position: relative;
+    display: table;
+    border-radius: 5px;
+}
+.content{
+    margin:60px 50px 0px 50px;
+}
+.content p{
+    margin-top: 15px;
+}
+.hitokoto{
+    text-align:left;
+    font-size:1.5em;
+    text-indent: 1.2em;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+}
+.from{
+    font-size:.9em;
+    float:right;
+}
+.progress-con{
+    position: absolute;
+    bottom: 35px;
+    width: 64%;
+    left: 20px;
+    height: 3px;
+    overflow: hidden;
+}
+.progress-time{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: left 30s;
+    -webkit-transition: left 30s;
+    -o-transition: left 30s;
+    -ms-transition: left 30s;
+    -moz-transition: left 30s;
+}
+.button{
+    margin-top: 60px;
+}
+.sub{
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    height: 2.4em;
+    width: 20%;
+    font-size: .8em;
+    float:right;
+    margin: 0 50px 20px auto;
+    color:#fff;
+}
+a{
+    margin-top: 20px;
+    display: inline-block;
+    color:#fff;
+    font-size: .7em;
+    text-decoration: none;
+}
+@media screen and (max-width: 588px){
+    .windows {
+        margin: 10% 4% auto 4%;
+        width: 92%;
+    }
+    .hitokoto{
+        font-size: .8em;
+    }
+    .from{
+        font-size: .8em;
+    }
+    .sub{
+        font-size: .6em;
+        height: 2.8em;
+        margin: 0 50px 23px auto;
+    }
+}
+@media screen and (max-width: 480px){
+    .progress-con{
+        width: 55%;
+    }
+}
+
+#lolicon{
+    margin: auto;
+    width: 900px;
+    overflow: hidden;
+}
+
+.list{
+    color:#333;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    animation: leftmove 120s infinite linear;
+}
+.list i {
+    float:left;
+    height: 150px;
+    vertical-align:middle;
+    text-align:center;
+}
+@-webkit-keyframes leftmove {
+    from{
+        left:0px;
+    }to{
+        left:-9900px;
+         }
+}
